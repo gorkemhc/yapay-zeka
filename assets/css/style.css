@@ -4237,8 +4237,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .prompt-breadcrumb a { color:var(--accent); text-decoration:none; }
 .prompt-detail-copy h1 { font-size:clamp(2.5rem,5vw,5rem); line-height:1.02; margin:14px 0 22px; }
 .prompt-detail-copy > p { color:var(--text-muted); font-size:1.08rem; line-height:1.8; max-width:760px; }
-.prompt-detail-image { position:relative; border-radius:28px; overflow:hidden; border:1px solid var(--card-border); box-shadow:var(--shadow); min-height:430px; }
-.prompt-detail-image img { display:block; width:100%; height:100%; min-height:430px; object-fit:cover; }
+.prompt-detail-image { position:relative; aspect-ratio:16/9; min-height:0; border-radius:28px; overflow:hidden; border:1px solid var(--card-border); box-shadow:var(--shadow); }
+.prompt-detail-image img { display:block; width:100%; height:100%; min-height:0; object-fit:cover; }
 .prompt-detail-tags { position:absolute; left:18px; right:18px; bottom:18px; display:flex; gap:8px; flex-wrap:wrap; }
 .prompt-detail-tags span { padding:8px 11px; border-radius:999px; background:rgba(5,9,18,.82); color:var(--text-main); font-size:.75rem; backdrop-filter:blur(12px); }
 .prompt-detail-metrics { display:flex; gap:18px; margin:20px 0; color:var(--text-muted); }
@@ -4361,8 +4361,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
     .platform-stats, .admin-stat-grid { grid-template-columns:repeat(2,1fr); }
     .weekly-prompt-card, .prompt-detail-hero, .builder-grid { grid-template-columns:1fr; }
     .weekly-prompt-image { min-height:230px; }
-    .prompt-detail-image { order:-1; min-height:300px; }
-    .prompt-detail-image img { min-height:300px; }
+    .prompt-detail-image { order:-1; min-height:0; }
+    .prompt-detail-image img { min-height:0; }
     .prompt-learning-grid, .prompt-detail-info, .guide-grid { grid-template-columns:1fr; }
     .builder-top { align-items:flex-start; flex-direction:column; }
     .builder-preview { min-height:460px; }

@@ -1,27 +1,8 @@
 (function () {
   'use strict';
 
-  var THEME_KEY = 'promptla_theme';
   var MOBILE_BREAKPOINT = 820;
   var COLLAPSE_POINT = 85;
-
-  function preferredTheme() {
-    var saved = null;
-    try {
-      saved = localStorage.getItem(THEME_KEY);
-    } catch (error) {
-      saved = null;
-    }
-    if (saved === 'light' || saved === 'dark') return saved;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-  }
-
-  function applyTheme(theme) {
-    document.documentElement.dataset.theme = theme;
-    document.documentElement.style.colorScheme = theme;
-  }
-
-  applyTheme(preferredTheme());
 
   document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('.promptla-unified-header');
@@ -84,42 +65,6 @@
       window.requestAnimationFrame(updateHeader);
     }
 
-    function themeLabel(theme) {
-      return theme === 'dark' ? 'Açık temaya geç' : 'Koyu temaya geç';
-    }
-
-    function syncThemeButton(button) {
-      var theme = document.documentElement.dataset.theme || 'dark';
-      var icon = button.querySelector('.theme-toggle-icon');
-      var text = button.querySelector('.theme-toggle-text');
-      button.setAttribute('aria-label', themeLabel(theme));
-      button.setAttribute('title', themeLabel(theme));
-      button.setAttribute('aria-pressed', String(theme === 'light'));
-      if (icon) icon.textContent = theme === 'dark' ? '☀' : '☾';
-      if (text) text.textContent = theme === 'dark' ? 'Açık tema' : 'Koyu tema';
-    }
-
-    function installThemeToggle() {
-      if (menu.querySelector('[data-theme-toggle]')) return;
-      var item = document.createElement('li');
-      item.className = 'theme-menu-item';
-      item.innerHTML = '<button class="theme-toggle" data-theme-toggle type="button"><span class="theme-toggle-icon" aria-hidden="true"></span><span class="theme-toggle-text"></span></button>';
-      menu.appendChild(item);
-      var button = item.querySelector('[data-theme-toggle]');
-      syncThemeButton(button);
-      button.addEventListener('click', function () {
-        var next = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';
-        applyTheme(next);
-        try {
-          localStorage.setItem(THEME_KEY, next);
-        } catch (error) {
-          /* Theme still applies for the current page when storage is unavailable. */
-        }
-        syncThemeButton(button);
-      });
-    }
-
-    installThemeToggle();
     updateHeader();
 
     window.addEventListener('scroll', requestHeaderUpdate, { passive: true });

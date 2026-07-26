@@ -6,10 +6,11 @@ PROMPTLA; yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve 
 
 - AI Studio: Claude Code, OpenAI Codex, n8n ve MCP rehberleri
 - Etkileşimli terminal laboratuvarı
-- 60 farklı prompt ve her promptun örnek sonucunu gösteren yerel WebP görseli
+- 60 farklı prompt ve her promptun birebir sonucunu gösteren özgün yerel WebP görseli
 - Prompt Builder
 - Yerel hesap, favori ve kayıtlı prompt sistemi
-- Mobil uyumlu navbar ve kalıcı açık/koyu tema
+- Mobil uyumlu, kaydırma davranışları iyileştirilmiş navbar
+- Tasarım bütünlüğünü koruyan kalıcı koyu tema
 
 ## Çalıştırma
 

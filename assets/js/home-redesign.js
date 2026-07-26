@@ -1,9 +1,5 @@
 (function(){
   'use strict';
-  const header=document.getElementById('homeHeader');
-  const updateHeader=()=>header?.classList.toggle('is-condensed',window.scrollY>85);
-  updateHeader();
-  window.addEventListener('scroll',updateHeader,{passive:true});
 
   const reveal=[...document.querySelectorAll('[data-reveal]')];
   if('IntersectionObserver' in window){
