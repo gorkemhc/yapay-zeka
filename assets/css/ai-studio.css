@@ -84,8 +84,8 @@
 .ai-flow-node strong { margin:8px 0 5px; }
 .ai-flow-node span { color:var(--text-muted); font-size:.77rem; line-height:1.5; }
 .ai-guide-layout { max-width:1400px; margin:0 auto; display:grid; grid-template-columns:260px minmax(0,1fr); gap:34px; padding:48px 5% 88px; }
-.ai-guide-aside { position:relative; }
-.ai-guide-toc { position:sticky; top:96px; border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:16px; background:rgba(8,14,25,.84); backdrop-filter:blur(12px); }
+.ai-guide-aside { position:relative; min-width:0; }
+.ai-guide-toc { position:sticky; top:96px; max-width:100%; border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:16px; background:rgba(8,14,25,.84); backdrop-filter:blur(12px); }
 .ai-guide-toc strong { display:block; padding:7px 10px 12px; font-size:.78rem; color:#fff; letter-spacing:.8px; }
 .ai-guide-toc a { display:block; color:#8fa0bd; text-decoration:none; padding:9px 10px; border-radius:10px; font-size:.82rem; line-height:1.35; transition:.2s; }
 .ai-guide-toc a:hover,.ai-guide-toc a.active { color:#dffcff; background:rgba(0,217,255,.075); }
@@ -216,7 +216,7 @@
   .ai-path-grid,.automation-grid,.compare-hero-grid { grid-template-columns:1fr; }
   .ai-guide-layout,.terminal-lab-layout { grid-template-columns:1fr; padding-top:26px; }
   .ai-guide-toc,.terminal-lessons { position:static; }
-  .ai-guide-toc { display:flex; gap:5px; overflow:auto; }
+  .ai-guide-toc { display:flex; order:initial; width:100%; max-height:none; gap:5px; padding:10px; overflow-x:auto; overflow-y:hidden; opacity:1; visibility:visible; pointer-events:auto; }
   .ai-guide-toc strong { display:none; }
   .ai-guide-toc a { white-space:nowrap; }
   .terminal-lessons { display:flex; overflow:auto; gap:5px; }

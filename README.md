@@ -6,10 +6,10 @@ PROMPTLA; yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve 
 
 - AI Studio: Claude Code, OpenAI Codex, n8n ve MCP rehberleri
 - Etkileşimli terminal laboratuvarı
-- 60 farklı prompt ve her prompta özel kapak görseli
+- 60 farklı prompt ve her promptun örnek sonucunu gösteren yerel WebP görseli
 - Prompt Builder
 - Yerel hesap, favori ve kayıtlı prompt sistemi
-- Mobil uyumlu, animasyonlu arayüz
+- Mobil uyumlu navbar ve kalıcı açık/koyu tema
 
 ## Çalıştırma
 
@@ -33,7 +33,7 @@ promptla/
 ├── assets/
 │   ├── css/                # Stil dosyaları
 │   └── js/                 # JavaScript dosyaları
-├── images/                 # Görseller ve prompt kapakları
+├── images/                 # Görseller ve prompt sonuçları
 ├── docs/                   # Sürüm notları ve kurulum notları
 ├── robots.txt
 ├── sitemap.xml

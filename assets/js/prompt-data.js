@@ -1,55 +1,55 @@
 window.PROMPTLA_DATA = {
-  "version": "2.3.0",
+  "version": "3.0.0",
   "categories": {
     "kod": {
       "label": "Kodlama",
       "icon": "</>",
-      "image": "images/prompt-scenes/01-mevcut-kodu-bozmadan-hata-ayiklama.svg"
+      "image": "images/prompt-results/01-mevcut-kodu-bozmadan-hata-ayiklama.webp"
     },
     "gorsel": {
       "label": "Görsel Üretim",
       "icon": "◈",
-      "image": "images/prompt-scenes/07-sinematik-teknoloji-urunu-reklami.svg"
+      "image": "images/prompt-results/07-sinematik-teknoloji-urunu-reklami.webp"
     },
     "video": {
       "label": "Video Üretim",
       "icon": "▶",
-      "image": "images/prompt-scenes/13-5-saniyelik-urun-lansman-videosu.svg"
+      "image": "images/prompt-results/13-5-saniyelik-urun-lansman-videosu.webp"
     },
     "3d": {
       "label": "3D ve Oyun",
       "icon": "⬡",
-      "image": "images/prompt-scenes/19-low-poly-oyun-varligi.svg"
+      "image": "images/prompt-results/19-low-poly-oyun-varligi.webp"
     },
     "odev": {
       "label": "Eğitim ve Ödev",
       "icon": "A+",
-      "image": "images/prompt-scenes/25-ders-notunu-sinav-paketine-donusturme.svg"
+      "image": "images/prompt-results/25-ders-notunu-sinav-paketine-donusturme.webp"
     },
     "metin": {
       "label": "İçerik ve Metin",
       "icon": "Aa",
-      "image": "images/prompt-scenes/31-linkedin-proje-paylasimi.svg"
+      "image": "images/prompt-results/31-linkedin-proje-paylasimi.webp"
     },
     "kariyer": {
       "label": "Kariyer",
       "icon": "↗",
-      "image": "images/prompt-scenes/37-ats-uyumlu-cv-gelistirme.svg"
+      "image": "images/prompt-results/37-ats-uyumlu-cv-gelistirme.webp"
     },
     "pazarlama": {
       "label": "Pazarlama",
       "icon": "◎",
-      "image": "images/prompt-scenes/43-rakip-analizi-cercevesi.svg"
+      "image": "images/prompt-results/43-rakip-analizi-cercevesi.webp"
     },
     "arastirma": {
       "label": "Araştırma ve Veri",
       "icon": "⌕",
-      "image": "images/prompt-scenes/49-kaynak-karsilastirmali-arastirma.svg"
+      "image": "images/prompt-results/49-kaynak-karsilastirmali-arastirma.webp"
     },
     "verimlilik": {
       "label": "Üretkenlik",
       "icon": "✓",
-      "image": "images/prompt-scenes/55-haftalik-calisma-plani.svg"
+      "image": "images/prompt-results/55-haftalik-calisma-plani.webp"
     }
   },
   "prompts": [
@@ -105,8 +105,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana mevcut kodu bozmadan hata ayıklama için bir şey hazırla.",
       "after": "ROL\nSen kıdemli yazılım geliştiricisisin.\n\nAMAÇ\nVerilen kodda hatanın kök nedenini bulmak ve mevcut yapıyı mümkün olduğunca koruyarak düzeltmek.\n\nGİRDİLER\n- Programlama dili: [DIL]\n- İncelenecek kod: [KOD]\n- Alınan hata: [HATA]\n- Beklenen davranış: [BEKLENEN]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKök neden, düzeltilmiş kod, değişiklik özeti ve test kontrol listesi.\n\nKISITLAR\nGereksiz yeniden yazım yapma; değişen satırları açıkla; güvenlik ve geriye uyumluluğu kontrol et.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kök neden, düzeltilmiş kod, değişiklik özeti ve test kontrol listesi.",
-      "image": "images/prompt-scenes/01-mevcut-kodu-bozmadan-hata-ayiklama.svg",
-      "thumbnail": "images/prompt-scenes/01-mevcut-kodu-bozmadan-hata-ayiklama.svg",
+      "image": "images/prompt-results/01-mevcut-kodu-bozmadan-hata-ayiklama.webp",
+      "thumbnail": "images/prompt-results/01-mevcut-kodu-bozmadan-hata-ayiklama.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -167,8 +167,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana responsive arayüz düzeltme için bir şey hazırla.",
       "after": "ROL\nSen senior frontend geliştiricisisin.\n\nAMAÇ\nMasaüstü tasarımı bozmadan mobil ve tablet görünümündeki taşma, hizalama ve erişilebilirlik sorunlarını düzeltmek.\n\nGİRDİLER\n- Teknoloji: [TEKNOLOJI]\n- Arayüz kodu: [KOD]\n- Görülen sorun: [SORUN]\n- Hedef cihazlar: [HEDEF]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSorun listesi, minimal yama kodu ve cihaz bazlı test senaryosu.\n\nKISITLAR\nMevcut renkleri ve tipografiyi değiştirme; mobile-first yaklaş; klavye kullanımını koru.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Sorun listesi, minimal yama kodu ve cihaz bazlı test senaryosu.",
-      "image": "images/prompt-scenes/02-responsive-arayuz-duzeltme.svg",
-      "thumbnail": "images/prompt-scenes/02-responsive-arayuz-duzeltme.svg",
+      "image": "images/prompt-results/02-responsive-arayuz-duzeltme.webp",
+      "thumbnail": "images/prompt-results/02-responsive-arayuz-duzeltme.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -229,8 +229,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sql sorgusu optimizasyonu için bir şey hazırla.",
       "after": "ROL\nSen veritabanı performans uzmanısın.\n\nAMAÇ\nYavaş çalışan sql sorgusunu indeks, sorgu planı ve veri modeli açısından optimize etmek.\n\nGİRDİLER\n- Veritabanı: [VERITABANI]\n- SQL sorgusu: [SORGU]\n- Tablo yapısı: [TABLOLAR]\n- Yaklaşık veri hacmi: [HACIM]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nOptimize sorgu, indeks önerileri, açıklama ve ölçüm planı.\n\nKISITLAR\nVeri doğruluğunu değiştirme; gereksiz indeks önermeme; yazma maliyetini belirt.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Optimize sorgu, indeks önerileri, açıklama ve ölçüm planı.",
-      "image": "images/prompt-scenes/03-sql-sorgusu-optimizasyonu.svg",
-      "thumbnail": "images/prompt-scenes/03-sql-sorgusu-optimizasyonu.svg",
+      "image": "images/prompt-results/03-sql-sorgusu-optimizasyonu.webp",
+      "thumbnail": "images/prompt-results/03-sql-sorgusu-optimizasyonu.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -290,8 +290,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana rest api tasarım asistanı için bir şey hazırla.",
       "after": "ROL\nSen API mimarısın.\n\nAMAÇ\nBelirtilen özellik için tutarlı, güvenli ve dokümante edilebilir rest api tasarlamak.\n\nGİRDİLER\n- Proje türü: [PROJE]\n- Ana kaynaklar: [KAYNAKLAR]\n- Yetkilendirme: [YETKI]\n- Backend teknolojisi: [TEKNOLOJI]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nEndpoint tablosu, istek/yanıt örnekleri, hata kodları ve güvenlik kontrol listesi.\n\nKISITLAR\nKaynak adlarını çoğul ve tutarlı kullan; hassas veriyi döndürme; idempotency belirt.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Endpoint tablosu, istek/yanıt örnekleri, hata kodları ve güvenlik kontrol listesi.",
-      "image": "images/prompt-scenes/04-rest-api-tasarim-asistani.svg",
-      "thumbnail": "images/prompt-scenes/04-rest-api-tasarim-asistani.svg",
+      "image": "images/prompt-results/04-rest-api-tasarim-asistani.webp",
+      "thumbnail": "images/prompt-results/04-rest-api-tasarim-asistani.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -352,8 +352,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana unit test üretici için bir şey hazırla.",
       "after": "ROL\nSen test otomasyonu uzmanısın.\n\nAMAÇ\nVerilen fonksiyon veya sınıf için sınır durumlarını kapsayan güvenilir testler üretmek.\n\nGİRDİLER\n- Dil ve test aracı: [DIL]\n- Test edilecek kod: [KOD]\n- Beklenen davranış: [DAVRANIS]\n- Hedef kapsam: [KAPSAM]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nTest senaryosu tablosu, çalışabilir test kodu ve eksik tasarım notları.\n\nKISITLAR\nUygulama kodunu değiştirmeden test et; bağımlılıkları mockla; kırılgan test yazma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Test senaryosu tablosu, çalışabilir test kodu ve eksik tasarım notları.",
-      "image": "images/prompt-scenes/05-unit-test-uretici.svg",
-      "thumbnail": "images/prompt-scenes/05-unit-test-uretici.svg",
+      "image": "images/prompt-results/05-unit-test-uretici.webp",
+      "thumbnail": "images/prompt-results/05-unit-test-uretici.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -413,8 +413,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana github readme ve proje sunumu için bir şey hazırla.",
       "after": "ROL\nSen teknik yazar ve açık kaynak proje yöneticisisın.\n\nAMAÇ\nProjeyi işe alım uzmanına ve geliştiriciye anlaşılır gösterecek profesyonel readme hazırlamak.\n\nGİRDİLER\n- Proje adı: [PROJE_ADI]\n- Teknolojiler: [TEKNOLOJILER]\n- Öne çıkan özellikler: [OZELLIKLER]\n- Kurulum şekli: [KURULUM]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBaşlık, demo, özellikler, kurulum, mimari, ekran görüntüsü alanları ve yol haritası.\n\nKISITLAR\nAbartılı iddialardan kaçın; kopyalanabilir komutlar ver; eksik bilgileri yer tutucuyla göster.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Başlık, demo, özellikler, kurulum, mimari, ekran görüntüsü alanları ve yol haritası.",
-      "image": "images/prompt-scenes/06-github-readme-ve-proje-sunumu.svg",
-      "thumbnail": "images/prompt-scenes/06-github-readme-ve-proje-sunumu.svg",
+      "image": "images/prompt-results/06-github-readme-ve-proje-sunumu.webp",
+      "thumbnail": "images/prompt-results/06-github-readme-ve-proje-sunumu.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -475,8 +475,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sinematik teknoloji ürünü reklamı için bir şey hazırla.",
       "after": "ROL\nSen reklam sanat yönetmeni ve ürün fotoğrafçısısın.\n\nAMAÇ\nBir teknoloji ürününü premium kampanya görseli olarak sunmak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Marka rengi: [RENK]\n- Arka plan / ortam: [ORTAM]\n- Görüntü oranı: [ORAN]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKamera, ışık, malzeme, kompozisyon ve negatif kısıtlar içeren görsel prompt.\n\nKISITLAR\nLogo ve ürün formunu koru; okunmayan yazı üretme; aşırı parlamadan kaçın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kamera, ışık, malzeme, kompozisyon ve negatif kısıtlar içeren görsel prompt.",
-      "image": "images/prompt-scenes/07-sinematik-teknoloji-urunu-reklami.svg",
-      "thumbnail": "images/prompt-scenes/07-sinematik-teknoloji-urunu-reklami.svg",
+      "image": "images/prompt-results/07-sinematik-teknoloji-urunu-reklami.webp",
+      "thumbnail": "images/prompt-results/07-sinematik-teknoloji-urunu-reklami.webp",
       "collections": [
         "Görsel Tasarım Paketi"
       ],
@@ -536,8 +536,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana profesyonel logo mockup sahnesi için bir şey hazırla.",
       "after": "ROL\nSen marka tasarımcısı ve 3D sahne sanatçısısın.\n\nAMAÇ\nVerilen logo metnini gerçekçi bir yüzey üzerinde premium mockup olarak göstermek.\n\nGİRDİLER\n- Logo / metin: [LOGO]\n- Uygulama yüzeyi: [YUZEY]\n- Işık stili: [ISIK]\n- Atmosfer: [ATMOSFER]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSadece değiştirilebilir logo alanını vurgulayan gerçekçi mockup promptu.\n\nKISITLAR\nLogo harflerini bozma; perspektif ve gölge yüzeyle uyumlu olsun; ek metin üretme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Sadece değiştirilebilir logo alanını vurgulayan gerçekçi mockup promptu.",
-      "image": "images/prompt-scenes/08-profesyonel-logo-mockup-sahnesi.svg",
-      "thumbnail": "images/prompt-scenes/08-profesyonel-logo-mockup-sahnesi.svg",
+      "image": "images/prompt-results/08-profesyonel-logo-mockup-sahnesi.webp",
+      "thumbnail": "images/prompt-results/08-profesyonel-logo-mockup-sahnesi.webp",
       "collections": [
         "Görsel Tasarım Paketi"
       ],
@@ -598,8 +598,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sosyal medya kampanya posteri için bir şey hazırla.",
       "after": "ROL\nSen sosyal medya sanat yönetmenisın.\n\nAMAÇ\nKampanya mesajını mobil ekranda okunabilir güçlü bir posterle anlatmak.\n\nGİRDİLER\n- Kampanya: [KAMPANYA]\n- Ana başlık: [BASLIK]\n- Renk paleti: [RENKLER]\n- Platform formatı: [FORMAT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nHiyerarşi, güvenli metin alanı, görsel odak ve platform oranı içeren prompt.\n\nKISITLAR\nMetni değiştirme; yüksek kontrast sağla; kenarlarda güvenli boşluk bırak.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Hiyerarşi, güvenli metin alanı, görsel odak ve platform oranı içeren prompt.",
-      "image": "images/prompt-scenes/09-sosyal-medya-kampanya-posteri.svg",
-      "thumbnail": "images/prompt-scenes/09-sosyal-medya-kampanya-posteri.svg",
+      "image": "images/prompt-results/09-sosyal-medya-kampanya-posteri.webp",
+      "thumbnail": "images/prompt-results/09-sosyal-medya-kampanya-posteri.webp",
       "collections": [
         "Sosyal Medya Paketi"
       ],
@@ -659,8 +659,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sinematik karakter portresi için bir şey hazırla.",
       "after": "ROL\nSen sinematograf ve portre fotoğrafçısısın.\n\nAMAÇ\nKarakterin kişiliğini ışık, lens ve ortamla anlatan gerçekçi portre üretmek.\n\nGİRDİLER\n- Karakter: [KARAKTER]\n- Kıyafet: [KIYAFET]\n- Ortam: [ORTAM]\n- Duygu: [DUYGU]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nPortre kompozisyonu, lens, ışık ve cilt dokusu ayrıntıları.\n\nKISITLAR\nDoğal anatomi; aşırı cilt yumuşatma yok; eller görünüyorsa doğru anatomi.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Portre kompozisyonu, lens, ışık ve cilt dokusu ayrıntıları.",
-      "image": "images/prompt-scenes/10-sinematik-karakter-portresi.svg",
-      "thumbnail": "images/prompt-scenes/10-sinematik-karakter-portresi.svg",
+      "image": "images/prompt-results/10-sinematik-karakter-portresi.webp",
+      "thumbnail": "images/prompt-results/10-sinematik-karakter-portresi.webp",
       "collections": [
         "Görsel Tasarım Paketi"
       ],
@@ -720,8 +720,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana e-ticaret ürün fotoğrafı seti için bir şey hazırla.",
       "after": "ROL\nSen e-ticaret ürün fotoğrafçısısın.\n\nAMAÇ\nAynı ürün için tutarlı ana görsel ve detay çekimleri oluşturmak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Zemin: [ZEMIN]\n- İstenen açılar: [ACILAR]\n- Pazaryeri: [PAZARYERI]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nAna ürün karesi ve 3 detay sahnesi için tutarlı prompt seti.\n\nKISITLAR\nÜrün renk ve formu tüm karelerde aynı; arka plan sade; yanıltıcı aksesuar ekleme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Ana ürün karesi ve 3 detay sahnesi için tutarlı prompt seti.",
-      "image": "images/prompt-scenes/11-e-ticaret-urun-fotografi-seti.svg",
-      "thumbnail": "images/prompt-scenes/11-e-ticaret-urun-fotografi-seti.svg",
+      "image": "images/prompt-results/11-e-ticaret-urun-fotografi-seti.webp",
+      "thumbnail": "images/prompt-results/11-e-ticaret-urun-fotografi-seti.webp",
       "collections": [
         "E-ticaret Paketi"
       ],
@@ -781,8 +781,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana oyun konsept sanatı için bir şey hazırla.",
       "after": "ROL\nSen oyun sanat yönetmenisın.\n\nAMAÇ\nOyunun atmosferini, oynanış alanını ve görsel dilini tek konsept karede göstermek.\n\nGİRDİLER\n- Oyun türü: [TUR]\n- Mekân: [MEKAN]\n- Oyuncu karakteri: [OYUNCU]\n- Sanat stili: [STIL]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nÇevre hikâyesi, ölçek, odak, renk senaryosu ve oynanış ipuçları.\n\nKISITLAR\nArayüz ekleme; karakter ölçeğini okunur tut; tek bir güçlü odak noktası kullan.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Çevre hikâyesi, ölçek, odak, renk senaryosu ve oynanış ipuçları.",
-      "image": "images/prompt-scenes/12-oyun-konsept-sanati.svg",
-      "thumbnail": "images/prompt-scenes/12-oyun-konsept-sanati.svg",
+      "image": "images/prompt-results/12-oyun-konsept-sanati.webp",
+      "thumbnail": "images/prompt-results/12-oyun-konsept-sanati.webp",
       "collections": [
         "Oyun Geliştirici Paketi"
       ],
@@ -843,8 +843,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana 5 saniyelik ürün lansman videosu için bir şey hazırla.",
       "after": "ROL\nSen reklam yönetmenisın.\n\nAMAÇ\nTek ürünü kısa, premium ve döngüye uygun bir lansman videosunda tanıtmak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Sahne: [SAHNE]\n- Kamera hareketi: [HAREKET]\n- Süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nZaman çizelgesi, kamera hareketi, ürün hareketi ve negatif video kısıtları.\n\nKISITLAR\nÜrün geometrisi değişmesin; ani kamera sarsıntısı yok; metin üretme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Zaman çizelgesi, kamera hareketi, ürün hareketi ve negatif video kısıtları.",
-      "image": "images/prompt-scenes/13-5-saniyelik-urun-lansman-videosu.svg",
-      "thumbnail": "images/prompt-scenes/13-5-saniyelik-urun-lansman-videosu.svg",
+      "image": "images/prompt-results/13-5-saniyelik-urun-lansman-videosu.webp",
+      "thumbnail": "images/prompt-results/13-5-saniyelik-urun-lansman-videosu.webp",
       "collections": [
         "Video Üretim Paketi"
       ],
@@ -905,8 +905,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana görselden videoya doğal hareket için bir şey hazırla.",
       "after": "ROL\nSen VFX süpervizörüsın.\n\nAMAÇ\nReferans görselin kompozisyonunu koruyarak kontrollü mikro hareketler eklemek.\n\nGİRDİLER\n- Referans görsel: [GORSEL]\n- Kamera: [KAMERA]\n- Sahne hareketi: [HAREKET]\n- Süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKorunacak alanlar, hareket katmanları ve kamera talimatı.\n\nKISITLAR\nYüz ve ürün formunu koru; yeni nesne ekleme; titreme ve morphing olmasın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Korunacak alanlar, hareket katmanları ve kamera talimatı.",
-      "image": "images/prompt-scenes/14-gorselden-videoya-dogal-hareket.svg",
-      "thumbnail": "images/prompt-scenes/14-gorselden-videoya-dogal-hareket.svg",
+      "image": "images/prompt-results/14-gorselden-videoya-dogal-hareket.webp",
+      "thumbnail": "images/prompt-results/14-gorselden-videoya-dogal-hareket.webp",
       "collections": [
         "Video Üretim Paketi"
       ],
@@ -966,8 +966,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sinematik şehir geçişi için bir şey hazırla.",
       "after": "ROL\nSen görüntü yönetmenisın.\n\nAMAÇ\nŞehir sahnesinde atmosferi güçlendiren sinematik kamera geçişi üretmek.\n\nGİRDİLER\n- Şehir / mekân: [SEHIR]\n- Kamera hareketi: [KAMERA]\n- Işık: [ISIK]\n- Süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSahne başlangıcı, hareket rotası, ışık değişimi ve bitiş karesi.\n\nKISITLAR\nFiziksel olarak mümkün kamera; tutarlı trafik; okunmayan tabela üretme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Sahne başlangıcı, hareket rotası, ışık değişimi ve bitiş karesi.",
-      "image": "images/prompt-scenes/15-sinematik-sehir-gecisi.svg",
-      "thumbnail": "images/prompt-scenes/15-sinematik-sehir-gecisi.svg",
+      "image": "images/prompt-results/15-sinematik-sehir-gecisi.webp",
+      "thumbnail": "images/prompt-results/15-sinematik-sehir-gecisi.webp",
       "collections": [
         "Video Üretim Paketi"
       ],
@@ -1027,8 +1027,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana logo reveal animasyonu için bir şey hazırla.",
       "after": "ROL\nSen motion grafik tasarımcısısın.\n\nAMAÇ\nLogoyu kısa ve temiz bir marka açılışıyla ortaya çıkarmak.\n\nGİRDİLER\n- Logo: [LOGO]\n- Malzeme: [MALZEME]\n- Reveal şekli: [HAREKET]\n- Süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBaşlangıç, oluşum, final bekleme ve loop seçeneği.\n\nKISITLAR\nLogo formu ve yazımı değişmesin; ek sembol ve metin olmasın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Başlangıç, oluşum, final bekleme ve loop seçeneği.",
-      "image": "images/prompt-scenes/16-logo-reveal-animasyonu.svg",
-      "thumbnail": "images/prompt-scenes/16-logo-reveal-animasyonu.svg",
+      "image": "images/prompt-results/16-logo-reveal-animasyonu.webp",
+      "thumbnail": "images/prompt-results/16-logo-reveal-animasyonu.webp",
       "collections": [
         "Video Üretim Paketi"
       ],
@@ -1088,8 +1088,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana dikey reels hikâye akışı için bir şey hazırla.",
       "after": "ROL\nSen kısa video içerik yönetmenisın.\n\nAMAÇ\nIlk saniyede dikkat çeken ve net aksiyon çağrısı içeren dikey video planlamak.\n\nGİRDİLER\n- Konu: [KONU]\n- Hedef kitle: [HEDEF]\n- Süre: [SURE]\n- Aksiyon çağrısı: [CTA]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSaniye saniye storyboard, ekran yazısı, seslendirme ve B-roll listesi.\n\nKISITLAR\nİlk 2 saniye güçlü kanca; kısa cümle; altyazı güvenli alanı; tek CTA.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Saniye saniye storyboard, ekran yazısı, seslendirme ve B-roll listesi.",
-      "image": "images/prompt-scenes/17-dikey-reels-hik-ye-akisi.svg",
-      "thumbnail": "images/prompt-scenes/17-dikey-reels-hik-ye-akisi.svg",
+      "image": "images/prompt-results/17-dikey-reels-hik-ye-akisi.webp",
+      "thumbnail": "images/prompt-results/17-dikey-reels-hik-ye-akisi.webp",
       "collections": [
         "Sosyal Medya Paketi"
       ],
@@ -1149,8 +1149,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana storyboard ve çekim listesi için bir şey hazırla.",
       "after": "ROL\nSen film yapımcısı ve storyboard sanatçısısın.\n\nAMAÇ\nKısa bir fikri uygulanabilir çekim planına dönüştürmek.\n\nGİRDİLER\n- Hikâye özeti: [HIKAYE]\n- Toplam süre: [SURE]\n- Mekân: [MEKAN]\n- Ekipman: [EKIPMAN]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nPlan numarası, kadraj, hareket, süre, ses ve geçiş içeren tablo.\n\nKISITLAR\nMevcut ekipmana uygun; gereksiz çekim yok; süre toplamı hedefi aşmasın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Plan numarası, kadraj, hareket, süre, ses ve geçiş içeren tablo.",
-      "image": "images/prompt-scenes/18-storyboard-ve-cekim-listesi.svg",
-      "thumbnail": "images/prompt-scenes/18-storyboard-ve-cekim-listesi.svg",
+      "image": "images/prompt-results/18-storyboard-ve-cekim-listesi.webp",
+      "thumbnail": "images/prompt-results/18-storyboard-ve-cekim-listesi.webp",
       "collections": [
         "Video Üretim Paketi"
       ],
@@ -1210,8 +1210,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana low-poly oyun varlığı için bir şey hazırla.",
       "after": "ROL\nSen 3D oyun sanatçısısın.\n\nAMAÇ\nOyun motoruna uygun temiz siluetli low-poly varlık tasarlamak.\n\nGİRDİLER\n- Nesne: [NESNE]\n- Poligon hedefi: [POLYGON]\n- Stil: [STIL]\n- Çıktı formatı: [FORMAT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nForm, malzeme, topoloji, pivot ve texture talimatı.\n\nKISITLAR\nTek parça temiz mesh; gerçek ölçek; merkez pivot; aşırı küçük detay yok.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Form, malzeme, topoloji, pivot ve texture talimatı.",
-      "image": "images/prompt-scenes/19-low-poly-oyun-varligi.svg",
-      "thumbnail": "images/prompt-scenes/19-low-poly-oyun-varligi.svg",
+      "image": "images/prompt-results/19-low-poly-oyun-varligi.webp",
+      "thumbnail": "images/prompt-results/19-low-poly-oyun-varligi.webp",
       "collections": [
         "Oyun Geliştirici Paketi"
       ],
@@ -1271,8 +1271,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana gerçekçi ürün 3d modeli için bir şey hazırla.",
       "after": "ROL\nSen hard-surface 3D modelleyicisın.\n\nAMAÇ\nÜrünün ölçü ve malzeme özelliklerini koruyan sunuma hazır 3d model oluşturmak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Ölçüler: [OLCU]\n- Malzemeler: [MALZEME]\n- Detay seviyesi: [DETAY]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nGeometri, bevel, malzeme, UV ve render kontrol listesi.\n\nKISITLAR\nGerçek ölçü; manifold mesh; marka logosu ekleme; ergonomik oranları koru.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Geometri, bevel, malzeme, UV ve render kontrol listesi.",
-      "image": "images/prompt-scenes/20-gercekci-urun-3d-modeli.svg",
-      "thumbnail": "images/prompt-scenes/20-gercekci-urun-3d-modeli.svg",
+      "image": "images/prompt-results/20-gercekci-urun-3d-modeli.webp",
+      "thumbnail": "images/prompt-results/20-gercekci-urun-3d-modeli.webp",
       "collections": [
         "3D Tasarım Paketi"
       ],
@@ -1332,8 +1332,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana oyun bölümü tasarım dokümanı için bir şey hazırla.",
       "after": "ROL\nSen kıdemli level designersın.\n\nAMAÇ\nOyuncuya keşif ve yönlendirme sunan dengeli bir bölüm tasarlamak.\n\nGİRDİLER\n- Oyun türü: [OYUN]\n- Ana mekanikler: [MEKANIK]\n- Hedef bölüm süresi: [SURE]\n- Atmosfer: [ATMOSFER]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBeat haritası, landmarklar, risk/ödül, pacing ve test soruları.\n\nKISITLAR\nOyuncuyu görünmez duvarlarla sıkıştırma; geri dönüş yolları; erişilebilir yönlendirme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Beat haritası, landmarklar, risk/ödül, pacing ve test soruları.",
-      "image": "images/prompt-scenes/21-oyun-bolumu-tasarim-dokumani.svg",
-      "thumbnail": "images/prompt-scenes/21-oyun-bolumu-tasarim-dokumani.svg",
+      "image": "images/prompt-results/21-oyun-bolumu-tasarim-dokumani.webp",
+      "thumbnail": "images/prompt-results/21-oyun-bolumu-tasarim-dokumani.webp",
       "collections": [
         "Oyun Geliştirici Paketi"
       ],
@@ -1394,8 +1394,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana npc davranış sistemi için bir şey hazırla.",
       "after": "ROL\nSen gameplay AI programcısısın.\n\nAMAÇ\nOkunabilir ve performanslı npc durum makinesi tasarlamak.\n\nGİRDİLER\n- NPC türü: [NPC]\n- Durumlar: [DURUMLAR]\n- Oyun motoru: [MOTOR]\n- Performans hedefi: [KISIT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nState machine şeması, geçiş koşulları, pseudo-code ve optimizasyon.\n\nKISITLAR\nHer kare pahalı tarama yapma; durum geçişlerini deterministik tut; debug görünümü ekle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "State machine şeması, geçiş koşulları, pseudo-code ve optimizasyon.",
-      "image": "images/prompt-scenes/22-npc-davranis-sistemi.svg",
-      "thumbnail": "images/prompt-scenes/22-npc-davranis-sistemi.svg",
+      "image": "images/prompt-results/22-npc-davranis-sistemi.webp",
+      "thumbnail": "images/prompt-results/22-npc-davranis-sistemi.webp",
       "collections": [
         "Oyun Geliştirici Paketi"
       ],
@@ -1455,8 +1455,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana blender sahne işık kurulumu için bir şey hazırla.",
       "after": "ROL\nSen ışık sanatçısısın.\n\nAMAÇ\nÜrün veya karakter için okunabilir ve sinematik üç nokta ışık kurulumu oluşturmak.\n\nGİRDİLER\n- Konu: [KONU]\n- Render motoru: [MOTOR]\n- Duygu: [DUYGU]\n- Arka plan: [ARKA_PLAN]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nIşık konumu, güç, renk sıcaklığı, kamera ve render ayarları.\n\nKISITLAR\nClipping ve gürültüyü azalt; materyal detayını kaybetme; kontrollü rim light.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Işık konumu, güç, renk sıcaklığı, kamera ve render ayarları.",
-      "image": "images/prompt-scenes/23-blender-sahne-isik-kurulumu.svg",
-      "thumbnail": "images/prompt-scenes/23-blender-sahne-isik-kurulumu.svg",
+      "image": "images/prompt-results/23-blender-sahne-isik-kurulumu.webp",
+      "thumbnail": "images/prompt-results/23-blender-sahne-isik-kurulumu.webp",
       "collections": [
         "3D Tasarım Paketi"
       ],
@@ -1517,8 +1517,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana webgl performans i̇ncelemesi için bir şey hazırla.",
       "after": "ROL\nSen WebGL performans mühendisisın.\n\nAMAÇ\nThree.js sahnesindeki fps düşüşünün nedenlerini ölçerek azaltmak.\n\nGİRDİLER\n- Sahne özeti: [SAHNE]\n- Mevcut istatistik: [ISTATISTIK]\n- Hedef cihaz: [CIHAZ]\n- İlgili kod: [KOD]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nDarboğaz sırası, ölçüm yöntemi, kod yamaları ve kalite kademeleri.\n\nKISITLAR\nÖlçmeden optimizasyon yapma; görsel kaliteyi kademeli düşür; bellek sızıntılarını kontrol et.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Darboğaz sırası, ölçüm yöntemi, kod yamaları ve kalite kademeleri.",
-      "image": "images/prompt-scenes/24-webgl-performans-incelemesi.svg",
-      "thumbnail": "images/prompt-scenes/24-webgl-performans-incelemesi.svg",
+      "image": "images/prompt-results/24-webgl-performans-incelemesi.webp",
+      "thumbnail": "images/prompt-results/24-webgl-performans-incelemesi.webp",
       "collections": [
         "Web Geliştirici Paketi"
       ],
@@ -1579,8 +1579,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana ders notunu sınav paketine dönüştürme için bir şey hazırla.",
       "after": "ROL\nSen öğretmen ve öğrenme tasarımcısısın.\n\nAMAÇ\nUzun ders notunu sınava hazırlık için yapılandırılmış tekrar paketine dönüştürmek.\n\nGİRDİLER\n- Ders: [DERS]\n- Ders notu: [NOT]\n- Sınav türü: [SINAV]\n- Çalışma süresi: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nÖzet, kritik kavramlar, soru seti, flashcard ve 3 günlük plan.\n\nKISITLAR\nNotta olmayan bilgi eklediğinde belirt; önemli tanımları koru; kısa ve sınav odaklı ol.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Özet, kritik kavramlar, soru seti, flashcard ve 3 günlük plan.",
-      "image": "images/prompt-scenes/25-ders-notunu-sinav-paketine-donusturme.svg",
-      "thumbnail": "images/prompt-scenes/25-ders-notunu-sinav-paketine-donusturme.svg",
+      "image": "images/prompt-results/25-ders-notunu-sinav-paketine-donusturme.webp",
+      "thumbnail": "images/prompt-results/25-ders-notunu-sinav-paketine-donusturme.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1640,8 +1640,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana 20 soruluk test hazırlama için bir şey hazırla.",
       "after": "ROL\nSen ölçme değerlendirme uzmanısın.\n\nAMAÇ\nVerilen konu için dengeli zorlukta cevap anahtarlı test hazırlamak.\n\nGİRDİLER\n- Konu: [KONU]\n- Seviye: [SEVIYE]\n- Soru sayısı: [SORU_SAYISI]\n- Zorluk dağılımı: [DAGILIM]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSorular, dört seçenek, cevap anahtarı ve kısa açıklamalar.\n\nKISITLAR\nTek doğru seçenek; çeldiriciler anlamlı; cevabı soru kökünde belli etme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Sorular, dört seçenek, cevap anahtarı ve kısa açıklamalar.",
-      "image": "images/prompt-scenes/26-20-soruluk-test-hazirlama.svg",
-      "thumbnail": "images/prompt-scenes/26-20-soruluk-test-hazirlama.svg",
+      "image": "images/prompt-results/26-20-soruluk-test-hazirlama.webp",
+      "thumbnail": "images/prompt-results/26-20-soruluk-test-hazirlama.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1701,8 +1701,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana sunum slayt planı için bir şey hazırla.",
       "after": "ROL\nSen sunum tasarımcısı ve konu uzmanısın.\n\nAMAÇ\nKonuyu süreye uygun, görsel ve anlaşılır bir sunum akışına dönüştürmek.\n\nGİRDİLER\n- Sunum konusu: [KONU]\n- Sunum süresi: [SURE]\n- Dinleyici: [DINLEYICI]\n- Slayt sayısı: [SLAYT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSlayt başlıkları, konuşmacı notları, görsel önerileri ve kapanış.\n\nKISITLAR\nSlayt başına tek ana fikir; uzun paragraf yok; kaynak gereken iddiaları işaretle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Slayt başlıkları, konuşmacı notları, görsel önerileri ve kapanış.",
-      "image": "images/prompt-scenes/27-sunum-slayt-plani.svg",
-      "thumbnail": "images/prompt-scenes/27-sunum-slayt-plani.svg",
+      "image": "images/prompt-results/27-sunum-slayt-plani.webp",
+      "thumbnail": "images/prompt-results/27-sunum-slayt-plani.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1763,8 +1763,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana akademik metin düzenleme için bir şey hazırla.",
       "after": "ROL\nSen akademik editörsın.\n\nAMAÇ\nMetnin anlamını değiştirmeden dil, akış ve akademik tutarlılığını iyileştirmek.\n\nGİRDİLER\n- Akademik alan: [ALAN]\n- Metin: [METIN]\n- Yazım stili: [STIL]\n- Atıf biçimi: [KAYNAK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nDüzeltilmiş metin, önemli değişiklikler ve doğrulanması gereken iddialar.\n\nKISITLAR\nKaynak uydurma; anlam ekleme; doğrudan alıntıları değiştirme; belirsizliği işaretle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Düzeltilmiş metin, önemli değişiklikler ve doğrulanması gereken iddialar.",
-      "image": "images/prompt-scenes/28-akademik-metin-duzenleme.svg",
-      "thumbnail": "images/prompt-scenes/28-akademik-metin-duzenleme.svg",
+      "image": "images/prompt-results/28-akademik-metin-duzenleme.webp",
+      "thumbnail": "images/prompt-results/28-akademik-metin-duzenleme.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1824,8 +1824,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana proje raporu i̇skeleti için bir şey hazırla.",
       "after": "ROL\nSen sistem analisti ve teknik yazarsın.\n\nAMAÇ\nYazılım projesi için teslim edilebilir rapor yapısı ve içerik taslağı oluşturmak.\n\nGİRDİLER\n- Proje: [PROJE]\n- Ders / bağlam: [DERS]\n- Zorunlu bölümler: [BOLUMLER]\n- Teknolojiler: [TEKNOLOJI]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKapak sonrası bölüm yapısı, her bölüm için yazılacaklar ve örnek tablolar.\n\nKISITLAR\nYapılmayan özelliği yapılmış gösterme; ölçülebilir gereksinim; ekran görüntüsü yerleri belirt.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kapak sonrası bölüm yapısı, her bölüm için yazılacaklar ve örnek tablolar.",
-      "image": "images/prompt-scenes/29-proje-raporu-iskeleti.svg",
-      "thumbnail": "images/prompt-scenes/29-proje-raporu-iskeleti.svg",
+      "image": "images/prompt-results/29-proje-raporu-iskeleti.webp",
+      "thumbnail": "images/prompt-results/29-proje-raporu-iskeleti.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1885,8 +1885,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana konu anlatan özel öğretmen için bir şey hazırla.",
       "after": "ROL\nSen sabırlı özel öğretmensın.\n\nAMAÇ\nZor bir konuyu öğrencinin seviyesine göre örnek ve mini alıştırmalarla öğretmek.\n\nGİRDİLER\n- Konu: [KONU]\n- Mevcut seviye: [SEVIYE]\n- Hedef: [HEDEF]\n- Tercih edilen örnek: [ORNEK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSeviye tespiti, sade anlatım, örnek, mini quiz ve cevap kontrolü.\n\nKISITLAR\nBir anda fazla kavram verme; jargonu açıkla; cevabı hemen vermeden düşündür.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Seviye tespiti, sade anlatım, örnek, mini quiz ve cevap kontrolü.",
-      "image": "images/prompt-scenes/30-konu-anlatan-ozel-ogretmen.svg",
-      "thumbnail": "images/prompt-scenes/30-konu-anlatan-ozel-ogretmen.svg",
+      "image": "images/prompt-results/30-konu-anlatan-ozel-ogretmen.webp",
+      "thumbnail": "images/prompt-results/30-konu-anlatan-ozel-ogretmen.webp",
       "collections": [
         "Öğrenci Paketi"
       ],
@@ -1946,8 +1946,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana linkedin proje paylaşımı için bir şey hazırla.",
       "after": "ROL\nSen teknik içerik stratejistisın.\n\nAMAÇ\nKişisel projeyi samimi fakat profesyonel bir linkedin gönderisiyle tanıtmak.\n\nGİRDİLER\n- Proje adı: [PROJE]\n- Çözdüğü sorun: [SORUN]\n- Teknolojiler: [TEKNOLOJI]\n- Çağrı: [CTA]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKanca, proje hikâyesi, özellikler, öğrenimler ve doğal CTA.\n\nKISITLAR\nAbartılı başarı iddiası yok; kısa paragraflar; 3–5 ilgili etiket.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kanca, proje hikâyesi, özellikler, öğrenimler ve doğal CTA.",
-      "image": "images/prompt-scenes/31-linkedin-proje-paylasimi.svg",
-      "thumbnail": "images/prompt-scenes/31-linkedin-proje-paylasimi.svg",
+      "image": "images/prompt-results/31-linkedin-proje-paylasimi.webp",
+      "thumbnail": "images/prompt-results/31-linkedin-proje-paylasimi.webp",
       "collections": [
         "Kariyer Paketi",
         "Sosyal Medya Paketi"
@@ -2008,8 +2008,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana youtube video senaryosu için bir şey hazırla.",
       "after": "ROL\nSen YouTube içerik yazarısın.\n\nAMAÇ\nKonuyu izlenebilir bir akışta anlatan sahne ve konuşma metni hazırlamak.\n\nGİRDİLER\n- Video konusu: [KONU]\n- Video süresi: [SURE]\n- Hedef kitle: [KITLE]\n- Anlatım stili: [STIL]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKanca, bölüm akışı, konuşma metni, ekran görüntüsü ve kapanış.\n\nKISITLAR\nİlk 15 saniye vaadi net; tekrar yok; teknik iddiaları doğrulama notuyla işaretle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kanca, bölüm akışı, konuşma metni, ekran görüntüsü ve kapanış.",
-      "image": "images/prompt-scenes/32-youtube-video-senaryosu.svg",
-      "thumbnail": "images/prompt-scenes/32-youtube-video-senaryosu.svg",
+      "image": "images/prompt-results/32-youtube-video-senaryosu.webp",
+      "thumbnail": "images/prompt-results/32-youtube-video-senaryosu.webp",
       "collections": [
         "Sosyal Medya Paketi"
       ],
@@ -2069,8 +2069,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana seo uyumlu blog yazısı için bir şey hazırla.",
       "after": "ROL\nSen SEO editörü ve alan uzmanısın.\n\nAMAÇ\nArama niyetini karşılayan doğal ve güvenilir blog yazısı üretmek.\n\nGİRDİLER\n- Ana anahtar kelime: [ANAHTAR]\n- Okuyucu: [KITLE]\n- Hedef uzunluk: [UZUNLUK]\n- İş hedefi: [AMAC]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBaşlıklar, meta açıklama, içerik, SSS ve iç bağlantı önerileri.\n\nKISITLAR\nAnahtar kelime doldurma yapma; kaynak gerektiren iddiaları belirt; özgün örnekler kullan.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Başlıklar, meta açıklama, içerik, SSS ve iç bağlantı önerileri.",
-      "image": "images/prompt-scenes/33-seo-uyumlu-blog-yazisi.svg",
-      "thumbnail": "images/prompt-scenes/33-seo-uyumlu-blog-yazisi.svg",
+      "image": "images/prompt-results/33-seo-uyumlu-blog-yazisi.webp",
+      "thumbnail": "images/prompt-results/33-seo-uyumlu-blog-yazisi.webp",
       "collections": [
         "İçerik Üretici Paketi"
       ],
@@ -2130,8 +2130,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana ürün açıklaması dönüştürücü için bir şey hazırla.",
       "after": "ROL\nSen e-ticaret metin yazarısın.\n\nAMAÇ\nTeknik ürün bilgisini ikna edici ve anlaşılır ürün açıklamasına dönüştürmek.\n\nGİRDİLER\n- Ürün: [URUN]\n- Teknik özellikler: [OZELLIK]\n- Hedef müşteri: [KITLE]\n- Marka tonu: [TON]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKısa özet, fayda odaklı maddeler, detay açıklama ve SSS.\n\nKISITLAR\nKanıtlanmayan üstünlük iddiası yok; teknik değeri değiştirme; okunabilir dil.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kısa özet, fayda odaklı maddeler, detay açıklama ve SSS.",
-      "image": "images/prompt-scenes/34-urun-aciklamasi-donusturucu.svg",
-      "thumbnail": "images/prompt-scenes/34-urun-aciklamasi-donusturucu.svg",
+      "image": "images/prompt-results/34-urun-aciklamasi-donusturucu.webp",
+      "thumbnail": "images/prompt-results/34-urun-aciklamasi-donusturucu.webp",
       "collections": [
         "E-ticaret Paketi"
       ],
@@ -2191,8 +2191,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana metni profesyonel dile çevirme için bir şey hazırla.",
       "after": "ROL\nSen kurumsal iletişim editörüsın.\n\nAMAÇ\nDağınık veya gündelik metni anlamı koruyarak profesyonel hale getirmek.\n\nGİRDİLER\n- Ham metin: [METIN]\n- Alıcı: [ALICI]\n- Amaç: [AMAC]\n- Ton: [TON]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKonuya uygun son metin ve gerekirse daha kısa alternatif.\n\nKISITLAR\nYeni bilgi uydurma; gereksiz resmiyet yok; istenen aksiyonu netleştir.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Konuya uygun son metin ve gerekirse daha kısa alternatif.",
-      "image": "images/prompt-scenes/35-metni-profesyonel-dile-cevirme.svg",
-      "thumbnail": "images/prompt-scenes/35-metni-profesyonel-dile-cevirme.svg",
+      "image": "images/prompt-results/35-metni-profesyonel-dile-cevirme.webp",
+      "thumbnail": "images/prompt-results/35-metni-profesyonel-dile-cevirme.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2252,8 +2252,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana 30 günlük i̇çerik takvimi için bir şey hazırla.",
       "after": "ROL\nSen içerik stratejistisın.\n\nAMAÇ\nTek bir marka için dengeli ve sürdürülebilir aylık içerik planı hazırlamak.\n\nGİRDİLER\n- Marka / proje: [MARKA]\n- Platformlar: [PLATFORM]\n- Hedef: [HEDEF]\n- Paylaşım sıklığı: [SIKLIK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nTarih, format, konu, kanca, CTA ve üretim notu içeren takvim.\n\nKISITLAR\nAynı fikri tekrarlama; eğitici, kanıt ve topluluk içeriklerini dengele.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Tarih, format, konu, kanca, CTA ve üretim notu içeren takvim.",
-      "image": "images/prompt-scenes/36-30-gunluk-icerik-takvimi.svg",
-      "thumbnail": "images/prompt-scenes/36-30-gunluk-icerik-takvimi.svg",
+      "image": "images/prompt-results/36-30-gunluk-icerik-takvimi.webp",
+      "thumbnail": "images/prompt-results/36-30-gunluk-icerik-takvimi.webp",
       "collections": [
         "Sosyal Medya Paketi"
       ],
@@ -2313,8 +2313,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana ats uyumlu cv geliştirme için bir şey hazırla.",
       "after": "ROL\nSen teknik işe alım uzmanısın.\n\nAMAÇ\nCv içeriğini hedef ilana göre ölçülebilir ve ats uyumlu hale getirmek.\n\nGİRDİLER\n- İş ilanı: [ILAN]\n- Mevcut CV: [CV]\n- Deneyim seviyesi: [SEVIYE]\n- Hedef rol: [ROL]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nUyum analizi, yeniden yazılmış maddeler, anahtar kelimeler ve eksik kanıtlar.\n\nKISITLAR\nOlmayan deneyim ekleme; anahtar kelime doldurma yok; kişisel bilgileri maskele.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Uyum analizi, yeniden yazılmış maddeler, anahtar kelimeler ve eksik kanıtlar.",
-      "image": "images/prompt-scenes/37-ats-uyumlu-cv-gelistirme.svg",
-      "thumbnail": "images/prompt-scenes/37-ats-uyumlu-cv-gelistirme.svg",
+      "image": "images/prompt-results/37-ats-uyumlu-cv-gelistirme.webp",
+      "thumbnail": "images/prompt-results/37-ats-uyumlu-cv-gelistirme.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2374,8 +2374,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana teknik mülakat simülasyonu için bir şey hazırla.",
       "after": "ROL\nSen kıdemli yazılım mülakatçısısın.\n\nAMAÇ\nHedef role uygun etkileşimli teknik mülakat yapıp geri bildirim vermek.\n\nGİRDİLER\n- Rol: [ROL]\n- Teknolojiler: [TEKNOLOJI]\n- Süre: [SURE]\n- Seviye: [SEVIYE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nSoru-cevap akışı, puanlama, güçlü yönler ve çalışma planı.\n\nKISITLAR\nSoruları tek tek sor; cevap gelmeden sonraki soruya geçme; ipucunu kademeli ver.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Soru-cevap akışı, puanlama, güçlü yönler ve çalışma planı.",
-      "image": "images/prompt-scenes/38-teknik-mulakat-simulasyonu.svg",
-      "thumbnail": "images/prompt-scenes/38-teknik-mulakat-simulasyonu.svg",
+      "image": "images/prompt-results/38-teknik-mulakat-simulasyonu.webp",
+      "thumbnail": "images/prompt-results/38-teknik-mulakat-simulasyonu.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2435,8 +2435,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana i̇ş i̇lanı uygunluk analizi için bir şey hazırla.",
       "after": "ROL\nSen kariyer danışmanısın.\n\nAMAÇ\nIş ilanı ile aday profilini kanıta dayalı şekilde karşılaştırmak.\n\nGİRDİLER\n- İlan: [ILAN]\n- Aday profili: [PROFIL]\n- Öncelik: [ONCELIK]\n- Kısıtlar: [KISIT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nGüçlü eşleşme, açıklar, başvuru kararı ve hazırlık önerileri.\n\nKISITLAR\nEksik gereksinimi küçümseme; kesin kabul tahmini yapma; kanıtsız yetenek ekleme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Güçlü eşleşme, açıklar, başvuru kararı ve hazırlık önerileri.",
-      "image": "images/prompt-scenes/39-is-ilani-uygunluk-analizi.svg",
-      "thumbnail": "images/prompt-scenes/39-is-ilani-uygunluk-analizi.svg",
+      "image": "images/prompt-results/39-is-ilani-uygunluk-analizi.webp",
+      "thumbnail": "images/prompt-results/39-is-ilani-uygunluk-analizi.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2496,8 +2496,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana portföy projesi vaka çalışması için bir şey hazırla.",
       "after": "ROL\nSen ürün odaklı teknik yazarsın.\n\nAMAÇ\nProjeyi problem, karar ve sonuçlarıyla etkileyici vaka çalışmasına dönüştürmek.\n\nGİRDİLER\n- Proje: [PROJE]\n- Kendi rolün: [ROL]\n- Problem: [SORUN]\n- Sonuç / ölçüm: [SONUC]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nÖzet, problem, süreç, teknik kararlar, zorluklar, sonuç ve sonraki adımlar.\n\nKISITLAR\nYapmadığın işi sahiplenme; ölçü yoksa nitel sonuç yaz; kararların gerekçesini göster.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Özet, problem, süreç, teknik kararlar, zorluklar, sonuç ve sonraki adımlar.",
-      "image": "images/prompt-scenes/40-portfoy-projesi-vaka-calismasi.svg",
-      "thumbnail": "images/prompt-scenes/40-portfoy-projesi-vaka-calismasi.svg",
+      "image": "images/prompt-results/40-portfoy-projesi-vaka-calismasi.webp",
+      "thumbnail": "images/prompt-results/40-portfoy-projesi-vaka-calismasi.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2557,8 +2557,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana recruiter mesajına yanıt için bir şey hazırla.",
       "after": "ROL\nSen kariyer iletişimi danışmanısın.\n\nAMAÇ\nIşe alım uzmanının mesajına net, profesyonel ve doğal yanıt hazırlamak.\n\nGİRDİLER\n- Gelen mesaj: [MESAJ]\n- Yanıt niyeti: [NIYET]\n- Uygunluk: [MUSAITLIK]\n- Ek not: [NOT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKısa yanıt, uygunluk ve gerekli tek soru.\n\nKISITLAR\nFazla kişisel bilgi verme; aşırı hevesli veya soğuk olma; saat dilimini netleştir.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kısa yanıt, uygunluk ve gerekli tek soru.",
-      "image": "images/prompt-scenes/41-recruiter-mesajina-yanit.svg",
-      "thumbnail": "images/prompt-scenes/41-recruiter-mesajina-yanit.svg",
+      "image": "images/prompt-results/41-recruiter-mesajina-yanit.webp",
+      "thumbnail": "images/prompt-results/41-recruiter-mesajina-yanit.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2618,8 +2618,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana 90 günlük junior gelişim planı için bir şey hazırla.",
       "after": "ROL\nSen yazılım mentorusın.\n\nAMAÇ\nHedef role ulaşmak için proje ve öğrenme odaklı gerçekçi 90 günlük plan hazırlamak.\n\nGİRDİLER\n- Hedef rol: [HEDEF]\n- Mevcut seviye: [MEVCUT]\n- Günlük süre: [SURE]\n- Proje tercihi: [PROJE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nHaftalık hedefler, kaynak türleri, mini projeler, ana proje ve ölçütler.\n\nKISITLAR\nAşırı konu yükleme; her haftada üretilebilir çıktı; tekrar ve değerlendirme zamanı ekle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Haftalık hedefler, kaynak türleri, mini projeler, ana proje ve ölçütler.",
-      "image": "images/prompt-scenes/42-90-gunluk-junior-gelisim-plani.svg",
-      "thumbnail": "images/prompt-scenes/42-90-gunluk-junior-gelisim-plani.svg",
+      "image": "images/prompt-results/42-90-gunluk-junior-gelisim-plani.webp",
+      "thumbnail": "images/prompt-results/42-90-gunluk-junior-gelisim-plani.webp",
       "collections": [
         "Kariyer Paketi"
       ],
@@ -2679,8 +2679,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana rakip analizi çerçevesi için bir şey hazırla.",
       "after": "ROL\nSen ürün pazarlama stratejistisın.\n\nAMAÇ\nRakipleri özellik, konumlandırma ve kullanıcı deneyimi açısından sistematik karşılaştırmak.\n\nGİRDİLER\n- Ürün / sektör: [URUN]\n- Rakipler: [RAKIPLER]\n- Hedef kitle: [KITLE]\n- Analiz hedefi: [HEDEF]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKarşılaştırma matrisi, fırsatlar, riskler ve doğrulanacak araştırma soruları.\n\nKISITLAR\nGüncel veri yoksa varsayımı işaretle; marka hakkında kanıtsız iddia yapma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Karşılaştırma matrisi, fırsatlar, riskler ve doğrulanacak araştırma soruları.",
-      "image": "images/prompt-scenes/43-rakip-analizi-cercevesi.svg",
-      "thumbnail": "images/prompt-scenes/43-rakip-analizi-cercevesi.svg",
+      "image": "images/prompt-results/43-rakip-analizi-cercevesi.webp",
+      "thumbnail": "images/prompt-results/43-rakip-analizi-cercevesi.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -2740,8 +2740,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana müşteri persona oluşturma için bir şey hazırla.",
       "after": "ROL\nSen kullanıcı araştırmacısısın.\n\nAMAÇ\nGerçek davranış ve ihtiyaçlara dayalı kullanılabilir persona taslağı oluşturmak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Mevcut veri: [VERI]\n- Pazar: [PAZAR]\n- İş hedefi: [HEDEF]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nPersona, işler, acılar, motivasyonlar, itirazlar ve mesaj önerileri.\n\nKISITLAR\nDemografik stereotip kullanma; veriye dayanmayan kısmı hipotez olarak işaretle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Persona, işler, acılar, motivasyonlar, itirazlar ve mesaj önerileri.",
-      "image": "images/prompt-scenes/44-musteri-persona-olusturma.svg",
-      "thumbnail": "images/prompt-scenes/44-musteri-persona-olusturma.svg",
+      "image": "images/prompt-results/44-musteri-persona-olusturma.webp",
+      "thumbnail": "images/prompt-results/44-musteri-persona-olusturma.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -2801,8 +2801,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana ürün konumlandırma mesajı için bir şey hazırla.",
       "after": "ROL\nSen ürün pazarlama liderisın.\n\nAMAÇ\nÜrünün kime, hangi sorunu nasıl farklı çözdüğünü netleştirmek.\n\nGİRDİLER\n- Ürün: [URUN]\n- Hedef kitle: [KITLE]\n- Alternatif: [ALTERNATIF]\n- Temel fark: [FARK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKonumlandırma cümlesi, değer önerileri, mesaj sütunları ve kanıt ihtiyacı.\n\nKISITLAR\nGenel ve herkes için olma iddiasından kaçın; ölçülemeyen üstünlük kullanma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Konumlandırma cümlesi, değer önerileri, mesaj sütunları ve kanıt ihtiyacı.",
-      "image": "images/prompt-scenes/45-urun-konumlandirma-mesaji.svg",
-      "thumbnail": "images/prompt-scenes/45-urun-konumlandirma-mesaji.svg",
+      "image": "images/prompt-results/45-urun-konumlandirma-mesaji.webp",
+      "thumbnail": "images/prompt-results/45-urun-konumlandirma-mesaji.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -2862,8 +2862,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana lansman kampanyası planı için bir şey hazırla.",
       "after": "ROL\nSen growth pazarlama yöneticisisın.\n\nAMAÇ\nKüçük ekip ve düşük bütçeyle uygulanabilir ürün lansmanı planlamak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Bütçe: [BUTCE]\n- Kanallar: [KANAL]\n- Lansman süresi: [TARIH]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nÖn lansman, lansman, takip takvimi; içerik; KPI ve deneyler.\n\nKISITLAR\nKanal kapasitesine uygun; vanity metric yerine davranış metriği; etik olmayan büyüme yok.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Ön lansman, lansman, takip takvimi; içerik; KPI ve deneyler.",
-      "image": "images/prompt-scenes/46-lansman-kampanyasi-plani.svg",
-      "thumbnail": "images/prompt-scenes/46-lansman-kampanyasi-plani.svg",
+      "image": "images/prompt-results/46-lansman-kampanyasi-plani.webp",
+      "thumbnail": "images/prompt-results/46-lansman-kampanyasi-plani.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -2923,8 +2923,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana satış e-postası serisi için bir şey hazırla.",
       "after": "ROL\nSen B2B satış metin yazarısın.\n\nAMAÇ\nSoğuk hedefe değer sunan kısa ve kişiselleştirilebilir e-posta serisi hazırlamak.\n\nGİRDİLER\n- Ürün: [URUN]\n- Alıcı rolü: [ALICI]\n- Ana fayda: [FAYDA]\n- Kanıt: [KANIT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\n3 e-posta: ilk temas, değer takibi ve nazik kapanış.\n\nKISITLAR\nYanıltıcı kişiselleştirme yok; kısa; tek CTA; spam dili kullanma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "3 e-posta: ilk temas, değer takibi ve nazik kapanış.",
-      "image": "images/prompt-scenes/47-satis-e-postasi-serisi.svg",
-      "thumbnail": "images/prompt-scenes/47-satis-e-postasi-serisi.svg",
+      "image": "images/prompt-results/47-satis-e-postasi-serisi.webp",
+      "thumbnail": "images/prompt-results/47-satis-e-postasi-serisi.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -2984,8 +2984,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana a/b test hipotezi üretme için bir şey hazırla.",
       "after": "ROL\nSen dönüşüm optimizasyonu uzmanısın.\n\nAMAÇ\nSayfa davranışına dayalı ölçülebilir a/b testleri tasarlamak.\n\nGİRDİLER\n- Sayfa: [SAYFA]\n- Ana hedef: [HEDEF]\n- Gözlenen sorun: [SORUN]\n- Mevcut veri: [VERI]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nHipotez, varyant, ana/koruyucu metrik, segment ve durdurma kriteri.\n\nKISITLAR\nAynı anda çok değişken test etme; istatistiksel güç ihtiyacını belirt; dark pattern yok.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Hipotez, varyant, ana/koruyucu metrik, segment ve durdurma kriteri.",
-      "image": "images/prompt-scenes/48-a-b-test-hipotezi-uretme.svg",
-      "thumbnail": "images/prompt-scenes/48-a-b-test-hipotezi-uretme.svg",
+      "image": "images/prompt-results/48-a-b-test-hipotezi-uretme.webp",
+      "thumbnail": "images/prompt-results/48-a-b-test-hipotezi-uretme.webp",
       "collections": [
         "Pazarlama Paketi"
       ],
@@ -3046,8 +3046,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana kaynak karşılaştırmalı araştırma için bir şey hazırla.",
       "after": "ROL\nSen araştırma analistisın.\n\nAMAÇ\nBir konuda kaynakları görüş, kanıt ve sınırlılıklarıyla karşılaştırmak.\n\nGİRDİLER\n- Araştırma sorusu: [SORU]\n- Kaynak metinleri: [KAYNAKLAR]\n- Zaman aralığı: [TARIH]\n- Çıktı biçimi: [CIKTI]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKaynak matrisi, ortak bulgular, çelişkiler, boşluklar ve sonuç.\n\nKISITLAR\nKaynak uydurma; korelasyonu nedensellik sayma; her iddiayı kaynağa bağla.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kaynak matrisi, ortak bulgular, çelişkiler, boşluklar ve sonuç.",
-      "image": "images/prompt-scenes/49-kaynak-karsilastirmali-arastirma.svg",
-      "thumbnail": "images/prompt-scenes/49-kaynak-karsilastirmali-arastirma.svg",
+      "image": "images/prompt-results/49-kaynak-karsilastirmali-arastirma.webp",
+      "thumbnail": "images/prompt-results/49-kaynak-karsilastirmali-arastirma.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3107,8 +3107,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana anket sorusu tasarımı için bir şey hazırla.",
       "after": "ROL\nSen UX araştırmacısısın.\n\nAMAÇ\nTarafsız ve analiz edilebilir kullanıcı anketi hazırlamak.\n\nGİRDİLER\n- Araştırma hedefi: [HEDEF]\n- Katılımcı: [KITLE]\n- Anket süresi: [SURE]\n- Ana konular: [KONU]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nEleme, davranış, tutum, açık uçlu ve demografi soruları.\n\nKISITLAR\nYönlendirici ve çift sorulu ifadeler yok; hassas soruyu gerekçelendir; seçeneklerde diğer alanı.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Eleme, davranış, tutum, açık uçlu ve demografi soruları.",
-      "image": "images/prompt-scenes/50-anket-sorusu-tasarimi.svg",
-      "thumbnail": "images/prompt-scenes/50-anket-sorusu-tasarimi.svg",
+      "image": "images/prompt-results/50-anket-sorusu-tasarimi.webp",
+      "thumbnail": "images/prompt-results/50-anket-sorusu-tasarimi.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3169,8 +3169,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana csv veri analizi planı için bir şey hazırla.",
       "after": "ROL\nSen veri analistisın.\n\nAMAÇ\nVeri setini temizleme, keşfetme ve anlamlı metrikler çıkarma planı oluşturmak.\n\nGİRDİLER\n- Kolonlar: [KOLONLAR]\n- İş sorusu: [HEDEF]\n- Satır sayısı: [HACIM]\n- Araç: [ARAC]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nVeri kalite kontrolü, EDA adımları, metrikler, örnek kod ve görselleştirme planı.\n\nKISITLAR\nKişisel veriyi anonimleştir; eksik değer varsayımlarını belirt; yanıltıcı grafik kullanma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Veri kalite kontrolü, EDA adımları, metrikler, örnek kod ve görselleştirme planı.",
-      "image": "images/prompt-scenes/51-csv-veri-analizi-plani.svg",
-      "thumbnail": "images/prompt-scenes/51-csv-veri-analizi-plani.svg",
+      "image": "images/prompt-results/51-csv-veri-analizi-plani.webp",
+      "thumbnail": "images/prompt-results/51-csv-veri-analizi-plani.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3230,8 +3230,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana tablo ve grafik yorumlama için bir şey hazırla.",
       "after": "ROL\nSen istatistik danışmanısın.\n\nAMAÇ\nVerilen tablo veya grafiği bağlam, eğilim ve belirsizlikleriyle açıklamak.\n\nGİRDİLER\n- Tablo / grafik açıklaması: [VERI]\n- Bağlam: [BAGLAM]\n- Sorulan karar: [HEDEF]\n- Rapor alıcısı: [KITLE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nAna bulgular, anormallikler, belirsizlik, olası açıklamalar ve ek analiz.\n\nKISITLAR\nGrafikte olmayan değeri uydurma; ölçek ve örneklem etkisini kontrol et; nedensellik iddiasından kaçın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Ana bulgular, anormallikler, belirsizlik, olası açıklamalar ve ek analiz.",
-      "image": "images/prompt-scenes/52-tablo-ve-grafik-yorumlama.svg",
-      "thumbnail": "images/prompt-scenes/52-tablo-ve-grafik-yorumlama.svg",
+      "image": "images/prompt-results/52-tablo-ve-grafik-yorumlama.webp",
+      "thumbnail": "images/prompt-results/52-tablo-ve-grafik-yorumlama.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3291,8 +3291,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana hipotez ve deney tasarımı için bir şey hazırla.",
       "after": "ROL\nSen deney tasarımı uzmanısın.\n\nAMAÇ\nÜrün değişikliğinin etkisini test edecek net hipotez ve deney planı oluşturmak.\n\nGİRDİLER\n- Değişiklik: [DEGISIKLIK]\n- Hedef davranış: [DAVRANIS]\n- Kullanıcı segmenti: [KITLE]\n- Tahmini süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nHipotez, kontrol/varyant, metrik, örneklem varsayımı, risk ve analiz planı.\n\nKISITLAR\nBaşarı kriterini önceden yaz; birincil metriği değiştirme; segmentleri sonradan seçme.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Hipotez, kontrol/varyant, metrik, örneklem varsayımı, risk ve analiz planı.",
-      "image": "images/prompt-scenes/53-hipotez-ve-deney-tasarimi.svg",
-      "thumbnail": "images/prompt-scenes/53-hipotez-ve-deney-tasarimi.svg",
+      "image": "images/prompt-results/53-hipotez-ve-deney-tasarimi.webp",
+      "thumbnail": "images/prompt-results/53-hipotez-ve-deney-tasarimi.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3353,8 +3353,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana uzun raporu yönetici özetine çevirme için bir şey hazırla.",
       "after": "ROL\nSen strateji analistisın.\n\nAMAÇ\nUzun raporu karar vericinin hızla anlayacağı yönetici özetine dönüştürmek.\n\nGİRDİLER\n- Rapor: [RAPOR]\n- Alıcı: [ALICI]\n- Beklenen karar: [KARAR]\n- Özet uzunluğu: [UZUNLUK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBağlam, 5 bulgu, etkiler, öneriler, riskler ve açık sorular.\n\nKISITLAR\nRapor dışı çıkarım yaparsan etiketle; kritik sayı ve koşulları koru; jargon azalt.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Bağlam, 5 bulgu, etkiler, öneriler, riskler ve açık sorular.",
-      "image": "images/prompt-scenes/54-uzun-raporu-yonetici-ozetine-cevirme.svg",
-      "thumbnail": "images/prompt-scenes/54-uzun-raporu-yonetici-ozetine-cevirme.svg",
+      "image": "images/prompt-results/54-uzun-raporu-yonetici-ozetine-cevirme.webp",
+      "thumbnail": "images/prompt-results/54-uzun-raporu-yonetici-ozetine-cevirme.webp",
       "collections": [
         "Araştırma Paketi"
       ],
@@ -3414,8 +3414,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana haftalık çalışma planı için bir şey hazırla.",
       "after": "ROL\nSen üretkenlik koçusın.\n\nAMAÇ\nHedefleri enerji ve zaman kısıtlarına göre gerçekçi haftalık plana dönüştürmek.\n\nGİRDİLER\n- Haftalık hedefler: [HEDEFLER]\n- Uygun zaman: [ZAMAN]\n- En önemli hedef: [ONCELIK]\n- Kısıtlar: [KISIT]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nGünlük bloklar, öncelikler, tampon süre ve haftalık değerlendirme.\n\nKISITLAR\nHer dakikayı doldurma; dinlenme ve gecikme payı; en fazla 3 ana görev/gün.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Günlük bloklar, öncelikler, tampon süre ve haftalık değerlendirme.",
-      "image": "images/prompt-scenes/55-haftalik-calisma-plani.svg",
-      "thumbnail": "images/prompt-scenes/55-haftalik-calisma-plani.svg",
+      "image": "images/prompt-results/55-haftalik-calisma-plani.webp",
+      "thumbnail": "images/prompt-results/55-haftalik-calisma-plani.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3475,8 +3475,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana görev önceliklendirme matrisi için bir şey hazırla.",
       "after": "ROL\nSen proje yöneticisisın.\n\nAMAÇ\nKarışık görev listesini etki, aciliyet ve efora göre sıralamak.\n\nGİRDİLER\n- Görev listesi: [GOREVLER]\n- Ana hedef: [HEDEF]\n- Kullanılabilir süre: [SURE]\n- Kaynak: [EKIP]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nEtki/efor matrisi, sıralı backlog ve bugün yapılacaklar.\n\nKISITLAR\nBağımlılıkları kontrol et; düşük değerli cilayı kritik hatanın önüne koyma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Etki/efor matrisi, sıralı backlog ve bugün yapılacaklar.",
-      "image": "images/prompt-scenes/56-gorev-onceliklendirme-matrisi.svg",
-      "thumbnail": "images/prompt-scenes/56-gorev-onceliklendirme-matrisi.svg",
+      "image": "images/prompt-results/56-gorev-onceliklendirme-matrisi.webp",
+      "thumbnail": "images/prompt-results/56-gorev-onceliklendirme-matrisi.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3536,8 +3536,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana toplantı notunu aksiyon listesine çevirme için bir şey hazırla.",
       "after": "ROL\nSen operasyon koordinatörüsın.\n\nAMAÇ\nDağınık toplantı notlarını sahipli ve tarihli aksiyonlara dönüştürmek.\n\nGİRDİLER\n- Toplantı notu: [NOT]\n- Katılımcılar: [KATILIMCI]\n- Toplantı tarihi: [TARIH]\n- Proje: [PROJE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKararlar, aksiyon, sorumlu, tarih, risk ve açık soru tablosu.\n\nKISITLAR\nSorumlu veya tarih yoksa uydurma; belirsiz alanı işaretle; tekrarları birleştir.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kararlar, aksiyon, sorumlu, tarih, risk ve açık soru tablosu.",
-      "image": "images/prompt-scenes/57-toplanti-notunu-aksiyon-listesine-cevirme.svg",
-      "thumbnail": "images/prompt-scenes/57-toplanti-notunu-aksiyon-listesine-cevirme.svg",
+      "image": "images/prompt-results/57-toplanti-notunu-aksiyon-listesine-cevirme.webp",
+      "thumbnail": "images/prompt-results/57-toplanti-notunu-aksiyon-listesine-cevirme.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3597,8 +3597,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana karar matrisi oluşturma için bir şey hazırla.",
       "after": "ROL\nSen karar analistisın.\n\nAMAÇ\nBirden fazla seçeneği ağırlıklı kriterlerle şeffaf biçimde karşılaştırmak.\n\nGİRDİLER\n- Karar: [KARAR]\n- Seçenekler: [SECENEK]\n- Kriterler: [KRITER]\n- En önemli kriter: [ONCELIK]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nKriter ağırlıkları, puanlama, duyarlılık ve öneri.\n\nKISITLAR\nPuan gerekçesini yaz; veri olmayan yerde varsayım; tek sonucu kesin gerçek gibi sunma.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Kriter ağırlıkları, puanlama, duyarlılık ve öneri.",
-      "image": "images/prompt-scenes/58-karar-matrisi-olusturma.svg",
-      "thumbnail": "images/prompt-scenes/58-karar-matrisi-olusturma.svg",
+      "image": "images/prompt-results/58-karar-matrisi-olusturma.webp",
+      "thumbnail": "images/prompt-results/58-karar-matrisi-olusturma.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3658,8 +3658,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana kişisel bilgi bankası düzenleme için bir şey hazırla.",
       "after": "ROL\nSen bilgi yönetimi danışmanısın.\n\nAMAÇ\nDağınık notları bulunabilir bir klasör, etiket ve özet sistemine dönüştürmek.\n\nGİRDİLER\n- Not türleri: [NOT_TURLERI]\n- Kullanılan araç: [ARAC]\n- Ekleme sıklığı: [SIKLIK]\n- Sorun: [SORUN]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\nBilgi mimarisi, şablonlar, etiket kuralları ve haftalık bakım rutini.\n\nKISITLAR\nÇok karmaşık sistem kurma; en fazla 5 ana alan; arşiv kuralı belirle.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "Bilgi mimarisi, şablonlar, etiket kuralları ve haftalık bakım rutini.",
-      "image": "images/prompt-scenes/59-kisisel-bilgi-bankasi-duzenleme.svg",
-      "thumbnail": "images/prompt-scenes/59-kisisel-bilgi-bankasi-duzenleme.svg",
+      "image": "images/prompt-results/59-kisisel-bilgi-bankasi-duzenleme.webp",
+      "thumbnail": "images/prompt-results/59-kisisel-bilgi-bankasi-duzenleme.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3719,8 +3719,8 @@ window.PROMPTLA_DATA = {
       "before": "Bana 30 günlük proje yol haritası için bir şey hazırla.",
       "after": "ROL\nSen teknik proje yöneticisisın.\n\nAMAÇ\nBelirsiz proje fikrini teslim edilebilir haftalık kilometre taşlarına dönüştürmek.\n\nGİRDİLER\n- Proje: [PROJE]\n- 30 günlük hedef: [HEDEF]\n- Mevcut durum: [MEVCUT]\n- Günlük süre: [SURE]\n\nUYGULAMA ADIMLARI\n1. Girdileri ve hedefi doğrula.\n2. Kritik varsayımları ve eksikleri açıkça işaretle.\n3. En uygun yaklaşımı gerekçesiyle seç.\n4. Çalışabilir ana çıktıyı üret.\n5. Sonucu kalite, doğruluk ve uygulanabilirlik açısından kontrol et.\n\nÇIKTI BİÇİMİ\n4 haftalık hedefler, görevler, kabul kriterleri, risk ve demo planı.\n\nKISITLAR\nHer haftada çalışır çıktı; bağımlılık sırası; son hafta sadece cilaya bırakılmasın.\n\nYanıtı Türkçe, net başlıklarla ve doğrudan kullanılabilir biçimde ver.",
       "exampleOutput": "4 haftalık hedefler, görevler, kabul kriterleri, risk ve demo planı.",
-      "image": "images/prompt-scenes/60-30-gunluk-proje-yol-haritasi.svg",
-      "thumbnail": "images/prompt-scenes/60-30-gunluk-proje-yol-haritasi.svg",
+      "image": "images/prompt-results/60-30-gunluk-proje-yol-haritasi.webp",
+      "thumbnail": "images/prompt-results/60-30-gunluk-proje-yol-haritasi.webp",
       "collections": [
         "Üretkenlik Paketi"
       ],
@@ -3849,11 +3849,11 @@ window.PROMPTLA_DATA = {
     },
     {
       "name": "Copilot",
-      "best": "Kod tamamlama ve Microsoft iş akışları",
+    "best": "Ofis belgeleri, sunum, analiz ve Microsoft 365 iş akışları",
       "context": "Ürüne göre değişir",
-      "image": "Orta",
-      "code": "Çok güçlü",
-      "tr": "İyi",
+    "image": "Ürüne göre değişir",
+    "code": "Ürüne göre değişir",
+    "tr": "Güçlü",
       "link": "copilot.html"
     },
     {

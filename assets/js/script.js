@@ -68,7 +68,7 @@
 
   function initPromptDropdowns(){
     const mobileQuery=window.matchMedia('(max-width: 768px)');
-    const dropdowns=[...document.querySelectorAll('.nav-dropdown')];
+    const dropdowns=[...document.querySelectorAll('.nav-dropdown')].filter(dropdown=>!dropdown.closest('.promptla-unified-header'));
 
     dropdowns.forEach(dropdown=>{
       if(dropdown.dataset.dropdownReady==='true') return;
@@ -178,6 +178,7 @@
     const nav=menu?.closest('nav');
     const btn=document.getElementById('hamburger');
     const header=btn?.closest('header');
+    if(header?.classList.contains('promptla-unified-header')) return;
     if(!menu || !nav || !btn || btn.dataset.mobileReady==='true') return;
 
     btn.dataset.mobileReady='true';

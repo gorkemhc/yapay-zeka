@@ -45,7 +45,9 @@ function activeVersionLabel(v){return v==='expert'?'Uzman':v==='advanced'?'Geli�
 function seed(){
   const users=getUsers().filter(u=>u.id!=='local-admin').map(({role,...u})=>u);
   if(JSON.stringify(getUsers())!==JSON.stringify(users)) setUsers(users);
-  if(!localStorage.getItem(KEYS.settings)) write(KEYS.settings,{weeklyPromptId:8,siteLogoText:'PROMPT',siteLogoAccent:'LA'});
+  const savedSettings=read(KEYS.settings,null);
+  if(!savedSettings) write(KEYS.settings,{weeklyPromptId:7,siteLogoText:'PROMPT',siteLogoAccent:'LA',dataVersion:3});
+  else if(!savedSettings.dataVersion) write(KEYS.settings,{...savedSettings,weeklyPromptId:savedSettings.weeklyPromptId===8?7:savedSettings.weeklyPromptId,dataVersion:3});
 }
 
 function applySeo(title,description,canonical,ogImage){
@@ -77,9 +79,12 @@ function bindAuthForms(){
 
 function renderHeader(){
   const settings=read(KEYS.settings,{});document.querySelectorAll('[data-logo-text]').forEach(x=>x.textContent=settings.siteLogoText||'PROMPT');document.querySelectorAll('[data-logo-accent]').forEach(x=>x.textContent=settings.siteLogoAccent||'LA');
-  document.querySelectorAll('.hamburger').forEach(btn=>{btn.setAttribute('role','button');btn.setAttribute('tabindex','0');btn.setAttribute('aria-label','Menüyü aç');btn.setAttribute('aria-expanded','false');btn.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();window.toggleMenu();}});});
-  document.querySelectorAll('.nav-dropdown:not(.ai-nav-dropdown) .nav-submenu').forEach(menu=>{
-    if(!menu.querySelector('[data-added="builder"]')) menu.insertAdjacentHTML('beforeend',`<a data-added="builder" href="${page('prompt-builder.html')}">Prompt Builder</a><a data-added="guide" href="${page('rehber.html')}">Prompt Rehberi</a>`);
+  document.querySelectorAll('.hamburger').forEach(btn=>{btn.setAttribute('role','button');btn.setAttribute('tabindex','0');btn.setAttribute('aria-label','Menüyü aç');btn.setAttribute('aria-expanded','false');if(!btn.closest('.promptla-unified-header'))btn.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();window.toggleMenu();}});});
+  document.querySelectorAll('.nav-dropdown').forEach(dropdown=>{
+    const toggle=dropdown.querySelector('.nav-dropdown-toggle'),menu=dropdown.querySelector('.nav-submenu');
+    if(!toggle||!menu||!String(toggle.getAttribute('href')||'').includes('promptlar.html'))return;
+    if(!menu.querySelector('a[href*="prompt-builder.html"]'))menu.insertAdjacentHTML('beforeend',`<a data-added="builder" href="${page('prompt-builder.html')}">Prompt Builder</a>`);
+    if(!menu.querySelector('a[href*="rehber.html"]'))menu.insertAdjacentHTML('beforeend',`<a data-added="guide" href="${page('rehber.html')}">Prompt Rehberi</a>`);
   });
   const slot=document.getElementById('accountMenuSlot'); if(!slot) return; const u=currentUser();
   if(u){slot.innerHTML=`<button class="account-btn account-btn-with-photo" onclick="toggleDropdown(event)" type="button"><span class="account-name">${esc(u.name.split(' ')[0])}</span><span class="account-avatar-sm">${esc(initials(u.name))}</span></button><div class="account-dropdown" id="accountDropdown"><a href="${page('profil.html')}">Profilim</a><a href="#" data-local-logout>Çıkış Yap</a></div>`;}
@@ -130,7 +135,7 @@ function renderHome(){
   const settings=read(KEYS.settings,{});
   const weekly=findPrompt(settings.weeklyPromptId)||DATA.prompts.find(p=>p.weekly)||DATA.prompts[7]||DATA.prompts[0];
   const box=document.getElementById('weeklyPrompt');
-  if(box&&weekly) box.innerHTML=`<div class="weekly-prompt-image"><img src="${attr(path('images/featured/mockverse-weekly.webp'))}" loading="lazy" width="1200" height="675" alt="MockVerse profesyonel mockup sahnesi"></div><div><span class="eyebrow">HAFTANIN PROMPTU</span><h2>${esc(weekly.title)}</h2><p>${esc(weekly.description)}</p><div class="prompt-model-tags">${weekly.models.slice(0,4).map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="hero-buttons"><a class="btn" href="${attr(promptUrl(weekly))}">Promptu Aç</a><a class="btn btn-secondary" href="${attr(page('prompt-builder.html?slug='+weekly.slug))}">Builder’da Kullan</a></div></div>`;
+  if(box&&weekly) box.innerHTML=`<div class="weekly-prompt-image"><img src="${attr(path(weekly.image))}" loading="lazy" width="1200" height="675" alt="${attr(weekly.title)} örnek sonucu"></div><div><span class="eyebrow">HAFTANIN PROMPTU</span><h2>${esc(weekly.title)}</h2><p>${esc(weekly.description)}</p><div class="prompt-model-tags">${weekly.models.slice(0,4).map(x=>`<span>${esc(x)}</span>`).join('')}</div><div class="hero-buttons"><a class="btn" href="${attr(promptUrl(weekly))}">Promptu Aç</a><a class="btn btn-secondary" href="${attr(page('prompt-builder.html?slug='+weekly.slug))}">Builder’da Kullan</a></div></div>`;
   const featured=document.getElementById('featuredPromptGrid');
   if(featured) featured.innerHTML=combinedPrompts().filter(p=>p.featured).slice(0,6).map(promptCard).join('');
   const stats=document.getElementById('platformStats');
