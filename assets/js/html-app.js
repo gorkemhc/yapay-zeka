@@ -111,6 +111,10 @@ function initPromptLibrary(){
     controls.innerHTML=`<div class="prompt-search-box"><label for="promptSearch">Prompt ara</label><input id="promptSearch" type="search" placeholder="Örn. PHP hata ayıklama, ürün reklamı..."></div><label>Kategori<select id="categoryFilter"><option value="all">Tüm kategoriler</option>${categories}</select></label><label>Alt kategori<select id="subcategoryFilter"><option value="all">Tüm alt kategoriler</option>${subs}</select></label><label>Model<select id="modelFilter"><option value="all">Tüm modeller</option>${models}</select></label><label>Seviye<select id="levelFilter"><option value="all">Tüm seviyeler</option><option>Başlangıç</option><option>Orta</option><option>İleri</option></select></label><label>Sırala<select id="sortFilter"><option value="featured">Öne çıkan</option><option value="new">En yeni</option><option value="copied">En çok kopyalanan</option><option value="liked">En çok beğenilen</option><option value="az">A–Z</option></select></label>`;
     [['promptSearch','search'],['categoryFilter','category'],['subcategoryFilter','subcategory'],['modelFilter','model'],['levelFilter','level'],['sortFilter','sort']].forEach(([id,key])=>document.getElementById(id)?.addEventListener(id==='promptSearch'?'input':'change',e=>{libraryState[key]=e.target.value;libraryState.page=1;renderLibrary();}));
   }
+  window.requestAnimationFrame(()=>{
+    const grid=document.getElementById('promptGrid');
+    if(grid&&!grid.children.length) renderLibrary();
+  });
   renderLibrary();
   document.getElementById('promptPagination')?.addEventListener('click',e=>{if(e.target.closest('[data-page-prev]'))libraryState.page--;if(e.target.closest('[data-page-next]'))libraryState.page++;renderLibrary();document.getElementById('prompt-library')?.scrollIntoView({behavior:'smooth'});});
   document.addEventListener('click',async e=>{const like=e.target.closest('[data-prompt-like]'),save=e.target.closest('[data-prompt-save]'),copy=e.target.closest('[data-prompt-copy]');if(like){togglePromptAction(like.dataset.promptLike,'like');renderLibrary();}if(save){togglePromptAction(save.dataset.promptSave,'save');renderLibrary();}if(copy){const p=findPrompt(copy.dataset.promptCopy);if(p){const vals=Object.fromEntries(p.variables.map(v=>[v.key,v.default]));await copyPrompt(p,'quick',vals);renderLibrary();}}});
@@ -183,7 +187,31 @@ function bindGlobalPromptActions(){
 }
 
 function renderCurrentPage(){if(PAGE==='profile')renderProfile();}
-function boot(){seed();renderAuthModal();renderHeader();bindPageAuth();bindGlobalPromptActions();if(PAGE==='home')renderHome();if(PAGE==='prompts')initPromptLibrary();if(PAGE==='prompt-detail')renderPromptDetail();if(PAGE==='builder')initStandaloneBuilder();if(PAGE==='profile')renderProfile();if(PAGE==='models')renderModels();}
+let hasBooted=false;
+function boot(){
+  if(hasBooted)return;
+  hasBooted=true;
+  seed();
+  renderAuthModal();
+  renderHeader();
+  bindPageAuth();
+  bindGlobalPromptActions();
+  if(PAGE==='home')renderHome();
+  if(PAGE==='prompts')initPromptLibrary();
+  if(PAGE==='prompt-detail')renderPromptDetail();
+  if(PAGE==='builder')initStandaloneBuilder();
+  if(PAGE==='profile')renderProfile();
+  if(PAGE==='models')renderModels();
+}
 
-document.addEventListener('DOMContentLoaded',boot);
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});
+else boot();
+
+window.addEventListener('pageshow',()=>{
+  if(!hasBooted){
+    boot();
+    return;
+  }
+  if(PAGE==='prompts')renderLibrary();
+});
 })();
