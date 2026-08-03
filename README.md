@@ -1,5 +1,8 @@
 # PROMPTLA
-
+<br>
+## CANLI DEMO 
+https://gorkemhc.github.io/promptla/
+<br>
 PROMPTLA; yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve profesyonel prompt kütüphanesini bir araya getiren statik bir web projesidir.
 
 ## Öne çıkan bölümler
