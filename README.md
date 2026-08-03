@@ -1,5 +1,3 @@
-Aşağıdaki sürümü doğrudan `README.md` dosyana yapıştırabilirsin:
-
 <div align="center">
 
 # 🤖 PROMPTLA
