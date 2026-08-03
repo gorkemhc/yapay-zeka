@@ -1,32 +1,40 @@
-# PROMPTLA
+Aşağıdaki sürümü doğrudan `README.md` dosyana yapıştırabilirsin:
+
+<div align="center">
+
+# 🤖 PROMPTLA
+
+**Yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve profesyonel prompt kütüphanesi**
+
 <br>
-CANLI DEMO 
-https://gorkemhc.github.io/promptla/
-<br>
-PROMPTLA; yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve profesyonel prompt kütüphanesini bir araya getiren statik bir web projesidir.
 
-## Öne çıkan bölümler
+### 🌐 Canlı Demo
 
-- AI Studio: Claude Code, OpenAI Codex, n8n ve MCP rehberleri
-- Etkileşimli terminal laboratuvarı
-- 60 farklı prompt ve her promptun birebir sonucunu gösteren özgün yerel WebP görseli
-- Prompt Builder
-- Yerel hesap, favori ve kayıtlı prompt sistemi
-- Mobil uyumlu, kaydırma davranışları iyileştirilmiş navbar
-- Tasarım bütünlüğünü koruyan kalıcı koyu tema
+[**Promptla'yı Görüntüle**](https://gorkemhc.github.io/promptla/)
 
-## Çalıştırma
+</div>
 
-Herhangi bir kurulum gerekmez. Depoyu indirdikten sonra `index.html` dosyasını tarayıcıda açın.
+---
 
-```bash
-git clone <REPO_URL>
-cd promptla
-```
+## 📌 Proje Hakkında
 
-Ardından `index.html` dosyasına çift tıklayın.
+**PROMPTLA**; yapay zekâ araçları, terminal kullanımı, otomasyon rehberleri ve profesyonel prompt kütüphanesini bir araya getiren statik bir web projesidir.
 
-## Klasör yapısı
+---
+
+## ✨ Öne Çıkan Bölümler
+
+* 🤖 **AI Studio:** Claude Code, OpenAI Codex, n8n ve MCP rehberleri
+* 💻 **Etkileşimli terminal laboratuvarı**
+* 🖼️ **60 farklı prompt** ve her promptun birebir sonucunu gösteren özgün yerel WebP görseli
+* 🧩 **Prompt Builder**
+* ⭐ **Yerel hesap, favori ve kayıtlı prompt sistemi**
+* 📱 **Mobil uyumlu**, kaydırma davranışları iyileştirilmiş navbar
+* 🌙 Tasarım bütünlüğünü koruyan **kalıcı koyu tema**
+
+---
+
+## 📁 Klasör Yapısı
 
 ```text
 promptla/
@@ -44,23 +52,33 @@ promptla/
 └── site.webmanifest
 ```
 
-## Teknolojiler
+---
 
-- HTML5
-- CSS3
-- Vanilla JavaScript
-- LocalStorage
+## 🛠️ Teknolojiler
 
-Projede PHP, MySQL, Firebase veya başka bir uzak veritabanı bağlantısı bulunmaz.
+* **HTML5**
+* **CSS3**
+* **Vanilla JavaScript**
+* **LocalStorage**
 
-## Veri saklama
+> Projede PHP, MySQL, Firebase veya başka bir uzak veritabanı bağlantısı bulunmaz.
 
-Hesap, favori, beğeni, yorum ve kayıtlı prompt verileri yalnızca kullanıcının tarayıcısındaki `localStorage` alanında tutulur. Farklı cihazlar arasında senkronizasyon yapılmaz.
+---
 
-## GitHub Pages
+## 💾 Veri Saklama
 
-Depo ayarlarında **Settings → Pages → Deploy from a branch** seçilerek `main` dalının kök dizini yayınlanabilir.
+Hesap, favori, beğeni, yorum ve kayıtlı prompt verileri yalnızca kullanıcının tarayıcısındaki `localStorage` alanında tutulur.
 
-## Bağlantılar
+Farklı cihazlar arasında senkronizasyon yapılmaz.
 
-LinkedIn ve GitHub adresleri `assets/js/site-links.js` dosyasından güncellenebilir.
+---
+
+## 🔗 Bağlantılar
+
+<div align="center">
+
+[**GitHub**](https://github.com/gorkemhc) ·
+[**LinkedIn**](https://www.linkedin.com/in/gorkemhicyilmaz/) ·
+[**E-posta**](mailto:gorkemhcylmz0@gmail.com)
+
+</div>
